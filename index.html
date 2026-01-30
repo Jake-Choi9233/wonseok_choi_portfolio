@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wonseok Choi | Portfolio</title>
+  <meta name="description" content="Single page portfolio of Wonseok Choi. Data science, knowledge systems, and AI for social good." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero" id="top">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <div class="hero__image reveal">
+          <img src="assets/img/profile.jpg" alt="Portrait of Wonseok Choi" />
+        </div>
+        <div class="hero__text reveal">
+          <h1>Wonseok Choi</h1>
+          <p class="lead">
+            I am Wonseok Choi, born in 2001 in South Korea. I am currently a final-year undergraduate student at Peking University's Yuanpei College, majoring in Information Management with a specialization in Big Data Management and Application. I moved to China in 2014 to pursue my studies and will graduate in July 2026. My research interests focus on Cross-Cultural NLP and AI for Social Good, with current work centered on mitigating cultural biases in large language models and building knowledge-driven systems that serve diverse communities.
+          </p>
+          <div class="hero__chips">
+            <span>Cross cultural NLP</span>
+            <span>AI for social good</span>
+            <span>Digital humanities</span>
+            <span>Information systems</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll to follow the story</span>
+        <div class="scroll-line"></div>
+      </div>
+    </header>
+
+    <section class="section story" id="story">
+      <div class="section__inner single">
+        <div class="section__text reveal">
+          <p class="eyebrow">Project One: Beginning with Digital Humanities</p>
+          <h2 class="story-title">Learning from Practice: Chinese Encyclopedia Digital Humanities Platform</h2>
+          <div class="cta-card link-card">
+            <div>
+              <p class="cta-title">Open Platform</p>
+              <p class="cta-sub">Chinese encyclopedia digital humanities platform</p>
+            </div>
+            <a class="cta-button" href="http://book.dhontology.com/" target="_blank" rel="noreferrer">Visit the platform</a>
+          </div>
+          <p>
+            In China, there's a saying, "百闻不如一见," meaning seeing once is better than hearing a hundred times.
+            When I returned to campus after completing my military service in April 2024, this proverb took on new meaning.
+            In Asst. Prof. Tong Wei's database course, his emphasis on learning from practice resonated deeply with me.
+            I realized that no amount of lectures could replace hands on experience, so I decided to push beyond classroom assignments.
+            That's when I joined the Chinese encyclopedia platform project as a core team member, ready to turn theory into real world impact.
+          </p>
+          <div class="inline-visual">
+            <img src="assets/img/db_main.png" alt="Chinese encyclopedia platform interface" />
+          </div>
+          <p>
+            Over the course of a year, I worked on everything from designing the domain ontology to deploying the whole system and training junior students.
+            The ancient documents had complex hierarchical structures that needed careful consideration.
+            I collected documents and metadata from various sources, then used Python to clean and structure them.
+            Subsequently, I built an advanced search system and a semantic search system on a cloud server using BERT ancient Chinese encoder and DiskANN index so scholars could search based on meaning rather than just keywords.
+            This experience solidified my practical foundation in domain research and data engineering.
+            Seeing how technology could genuinely help humanities scholars, I wanted to become a cultural bridge, using my diverse background to make broader contributions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project" id="project-drone">
+      <div class="section__inner single">
+        <div class="section__text reveal">
+          <p class="eyebrow">Project Two: Way to AI for Social Good</p>
+          <h2>Oil Spill Detection Drone</h2>
+          <p>
+            Transferring from text domain to computer vision, I joined the Lingnan-Yuanpei STEM competition tackling oil spill detection in Hong Kong's harbor.
+            One of my teammates and I designed a low-cost drone prototype using Raspberry Pi and built a dual-model detection system using U-Net for daytime oil spill segmentation and YOLOv5 for nighttime infrared detection, which was fine-tuned with the data we labeled ourselves.
+          </p>
+          <div class="inline-visual">
+            <img src="assets/img/drone_arch.png" alt="Oil spill detection drone architecture" />
+          </div>
+          <p>
+            Besides, I also developed a real-time dashboard integrating weather APIs and LLM-powered analysis to predict oil spill trajectories based on flight altitude.
+          </p>
+          <div class="inline-visual">
+            <img src="assets/img/drone_dashboard.png" alt="Oil spill detection dashboard" />
+          </div>
+          <div class="inline-visual">
+            <img src="assets/img/drone_showcase.jpg" alt="Drone showcase" />
+          </div>
+          <p>
+            This project expanded my technical range beyond NLP and reinforced my belief in AI for social good.
+            I realized that integrating LLM reasoning into real-world applications could create valuable insights, sparking my interest to explore this area more deeply.
+          </p>
+          <div class="inline-visual">
+            <div class="video-frame">
+              <video controls preload="metadata">
+                <source src="assets/video/drone_video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project" id="project-ontology">
+      <div class="section__inner single">
+        <div class="section__text reveal">
+          <p class="eyebrow">Project Three: LLMs</p>
+          <h2>Toward Culturally Aligned LLMs through Ontology-Guided Multi-Agent<br />Reasoning</h2>
+          <div class="cta-card link-card">
+            <div>
+              <p class="cta-title">Open Live Demo</p>
+              <p class="cta-sub">Interactive project page for OG-MAR</p>
+            </div>
+            <a class="cta-button" href="https://authorname55.github.io/OG-MAR/" target="_blank" rel="noreferrer">Visit DEMO</a>
+          </div>
+          <div class="inline-visual">
+            <object data="assets/img/preprint.pdf" type="application/pdf" class="pdf-frame">
+              <p>Your browser cannot display the PDF. You can open it directly in your downloads.</p>
+            </object>
+          </div>
+          <div class="inline-visual">
+            <img src="assets/img/main_architecture.png" alt="Ontology-guided multi-agent reasoning architecture" />
+          </div>
+          <p>
+            In late 2025, I joined Asst. Prof. Yi Bu's lab to conduct research on mitigating cultural bias in LLMs.
+            Starting from building a taxonomy of 76 value categories, I led the methodology for constructing a Cultural Value Ontology using the Memoryless CQbyCQ method and designed a hypergraph-based retrieval approach to integrate structured cultural knowledge into the reasoning process.
+            For demographic retrieval, we combined BM25s and e5-base embeddings with reciprocal rank fusion.
+            For the reasoning process, we implemented multi-agent simulation with Value-Persona Agents and a Judgement Agent to synthesize culturally grounded responses.
+            This research convinced me that structured cultural knowledge is essential for making LLMs more inclusive and strengthened my commitment to continue AI research that serves people across diverse cultural backgrounds.
+          </p>
+          <p class="note"><strong>Denote:</strong> I led the full paper pipeline, from data preprocessing to ontology construction, main experiments, and ablation studies, and all visualizations in this paper were created by Wonseok Choi.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section project" id="project-viz">
+      <div class="section__inner single">
+        <div class="section__text reveal">
+          <p class="eyebrow">Additional Project: Data Visualization</p>
+          <h2>Premier League Visualization - Bargain Star Hunter</h2>
+          <div class="cta-card link-card">
+            <div>
+              <p class="cta-title">Open Live Demo</p>
+              <p class="cta-sub">Premier League interactive dashboard</p>
+            </div>
+            <a class="cta-button" href="https://jake-choi9233.github.io/Premier-League-Visualization/" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+          <div class="inline-visual">
+            <img src="assets/img/network_viz.png" alt="Premier League visualization sample" />
+          </div>
+          <p>
+            I built an interactive Premier League visualization with D3.js to surface value for money players.
+            The dashboard lets users compare salary and performance, explore team reliance patterns, and spot overpaid or underrated players through radar charts, sunburst views, and cost effectiveness panels.
+            The goal is to replace hype with data driven scouting insights.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <p>(c) 2026 Wonseok Choi</p>
+      <a href="#top" class="back-top">Back to top</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
